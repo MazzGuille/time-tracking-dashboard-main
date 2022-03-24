@@ -11,6 +11,7 @@
 --Desaturated-blue: hsl(235, 45%, 61%);
 --Pale-Blue: hsl(236, 100%, 87%);
 --Main-Blue: #000550; 
+--Hover-Blue: #000858;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
@@ -29,14 +30,20 @@ html{
 
 body{
     background-color: var(--Dark-blue);
-    padding: 6rem 2rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
     color: white;
     font-size: 1.8rem;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper{
     gap: 2rem;
     display: grid;
+    width: 36rem;
     grid-template-areas: 
     "main"
     "work"
@@ -128,6 +135,11 @@ body{
     position: relative;
 }
 
+.work-content:hover{
+    cursor: pointer;
+    background-color: var(--Hover-Blue);
+}
+
 .work-row1{
     display: flex;
     justify-content: space-between;
@@ -150,49 +162,253 @@ body{
 .play{
     grid-area: play;
     background-color: var(--Soft-blue-play);
-    padding: 2rem;
     height: 20.5rem;
     width: 33rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.play img{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+}
+
+.play-content{
+    width: 100%;
+    height: 90%;
+    margin-top: 4rem;
+    background-color: var(--Main-Blue);
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+}
+
+.play-content:hover{
+    cursor: pointer;
+    background-color: var(--Hover-Blue);
+}
+
+.play-row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-row1 img{
+    width: 2rem;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 10.5%;
+}
+
+.play-row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .study{
     grid-area: study;
     background-color: var(--Light-red-study);
-    padding: 2rem;
     height: 20.5rem;
     width: 33rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
 }
+
+.study img{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+}
+
+.study-content{
+    width: 100%;
+    height: 90%;
+    margin-top: 4rem;
+    background-color: var(--Main-Blue);
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+}
+
+.study-content:hover{
+    cursor: pointer;
+    background-color: var(--Hover-Blue);
+}
+
+.study-row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.study-row1 img{
+    width: 2rem;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 10.5%;
+}
+
+.study-row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .exercise{
     grid-area: exercise;
     background-color: var(--Lime-green-exercise);
-    padding: 2rem;
     height: 20.5rem;
     width: 33rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.exercise img{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+}
+
+.exercise-content{
+    width: 100%;
+    height: 90%;
+    margin-top: 4rem;
+    background-color: var(--Main-Blue);
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+}
+
+.exercise-content:hover{
+    cursor: pointer;
+    background-color: var(--Hover-Blue);
+}
+
+.exercise-row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise-row1 img{
+    width: 2rem;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 10.5%;
+}
+
+.exercise-row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .social{
     grid-area: social;
     background-color: var(--Violet-social);
-    padding: 2rem;
     height: 20.5rem;
     width: 33rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.social img{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+}
+
+.social-content{
+    width: 100%;
+    height: 90%;
+    margin-top: 4rem;
+    background-color: var(--Main-Blue);
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+}
+
+.social-content:hover{
+    cursor: pointer;
+    background-color: var(--Hover-Blue);
+}
+
+.social-row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-row1 img{
+    width: 2rem;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 10.5%;
+}
+
+.social-row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .self-care{
     grid-area: self-care;
     background-color: var(--Soft-orange-self-care);
-    padding: 2rem;
     height: 20.5rem;
     width: 33rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 
+.self-care img{
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+}
 
+.self-care-content{
+    width: 100%;
+    height: 90%;
+    margin-top: 4rem;
+    background-color: var(--Main-Blue);
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+}
 
+.self-care-content:hover{
+    cursor: pointer;
+    background-color: var(--Hover-Blue);
+}
 
+.self-care-row1{
+    display: flex;
+    justify-content: space-between;
+}
 
+.self-care-row1 img{
+    width: 2rem;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 10.5%;
+}
 
-
+.self-care-row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .attribution{ 
     font-size: 11px; text-align: center; 
@@ -200,3 +416,107 @@ body{
 .attribution a{ 
     color: hsl(228, 45%, 44%); 
 }
+
+
+/* -----media query----- */
+
+@media (min-width: 760px){
+    .wrapper{
+        gap: 2rem;
+        display: grid;
+        width: auto;
+        height: 70vh;
+        grid-template-areas: 
+        "... main main ..."          
+        "work work play play "
+        "study study exercise exercise"
+        "social social self-care self-care"
+        ;
+    }
+
+}
+
+
+@media(min-width: 1200px){
+    
+    body{
+    padding-top: 10rem;
+    padding-left: 2rem;
+    overflow-x: hidden;
+    }
+    
+    .wrapper{
+        gap: 2rem;
+        display: grid;
+        width: auto;
+        height: 70vh;
+        grid-template-areas: 
+        "main work play study "
+        "main exercise social self-care"
+        ;
+    }
+
+    .main, .work, .play, .study, .exercise, .social, .self-care{
+        width: 25.5rem;
+        height: auto;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 75%;
+    }
+    
+    .name picture{
+        align-self: flex-start;
+        margin-left: 3rem;
+        height: 30%;
+        padding-top: 10%;
+    }
+
+    .main picture img{
+        width: 10rem;   
+    }
+
+
+    .main-txt{
+        height: 70%;
+        font-size: 1.8rem;
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+    }
+
+    .period{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 25%;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .work-content, .play-content, .study-content, 
+    .exercise-content, .social-content, .self-care-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work-row2, .play-row2, .study-row2, .exercise-row2, 
+    .social-row2, .self-care-row2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+}
+
+
